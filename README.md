@@ -10,7 +10,7 @@ Share this page with your webmaster, below are the technical installation and us
 
 -----
 
-<br><br><br>
+<br><br>
 
 # Installation
 
@@ -50,11 +50,16 @@ In our basic example, submitions include the dealer information and ensures corr
 ### Step 3
 Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brand Mobility Application".
 
-### Debug
+### What Next
+You can include a <a href="#parameter-vehicle"><code>vehicle</code></a> `object` in the <a href="#parameter-initializer"><code>initializer</code></a> parameter or add/update vehicle information via the <a href="#method-vehicleSet">setVehicle()</a> method. 
+
+
+
+# Debug
 If things are not working correctly, see the javascript console as errors will be displayed to help solve the issue. In Google Chrome, right click the page and choose 'Inspect'.
 
------
-<br><br><br>
+
+<br><br>
 
 # API Reference
 
@@ -70,7 +75,7 @@ var myRef = new BrandlAppLoader(initializer);
 ---
 
 ## Methods
-
+<a name="method-vehicleSet"></a>
 ### - vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
 @param <a href="#parameter-vehicle"><code>vehicle</code></a><br>
 Add or update the vehicle associated with application. This is useful if your site's page does not reload between vehicle views. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.
@@ -78,7 +83,7 @@ Add or update the vehicle associated with application. This is useful if your si
 // Usage
 myRef.vehicleSet(vehicle);
 ```
-<br><br>
+<br>
 
 ### - vehicleGet()
 @returns <a href="#parameter-vehicle"><code>vehicle</code></a><br>
@@ -87,9 +92,13 @@ Get the current <a href="#parameter-vehicle"><code>vehicle</code></a> `object`.
 // Usage
 myRef.vehicleGet();
 ```
-<br><br>
+<br>
 
-----
+
+
+
+
+<br>
 
 ## Parameters
 
