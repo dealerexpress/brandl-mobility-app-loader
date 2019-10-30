@@ -8,11 +8,12 @@ Add a Brandl Mobility credit app to any site using the javascript loader. Simply
 ### Next Step
 Share this page with your webmaster, below are the technical installation and usage instructions.
 
+-----
+
 Installation
 ------------
 Everything you need is hosted on a CDN and may be used as shown. It's recommended to used the CDN hosted files as updates can be made without updated your site.
 
------
 ### Step 1
 Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price.  For Example: 
 
@@ -26,28 +27,33 @@ The link can be anything you like. Feel free to wrap images, containers or other
 
 -----
 ### Step 2
-Place the following script loader on any page links should be upgraded.  *You may place this within an include file such as your footer allowing use on any page of your site.*
+Place the following script loader on any page containing links links/buttons for the financing application.  *You may place this in an include file such as your footer allowing use on any page of your site.*
 ```html
-<script src="https://dx-cdn-public.storage.googleapis.com/dx-shared/browser-scripts/brandl-mobility-app-loader/dist/bundle.min.gz.js" type="application/javascript"></script>
-```
------
-### Step 3
-Initialize a basic loader on any page where links/buttons to the application are desired.  The following should anywhere AFTER the script load from step 2.
+<script src="https://dx-cdn-public.storage.googleapis.com/dx-shared/browser-scripts/brandl-mobility-app-loader/dist/bundle.min.gz.js"></script>
 
-```html
+<!-- Initialize a basic loader on any page where links/buttons to the application are 
+     desired.  The following should be anywhere AFTER the script loader. -->
 <script type="application/javascript">
 var basicExample = new BrandlAppLoader({  
-   dealerID: 'Your dealerID Here',  
+   dealerID: 'demo',  
    selector: 'a.my-app-selector' 
 });
 </script>
+
+```
+-----
+### Step 3
+ from step 2.
+
+```html
+
 ```
 
  - **dealerID**  `string` `required` 
 [See below](#locateDealerID) on obtaining the dealerID
 
  - **selector**  `string` `required` 
-Use whatever you like... The selector is used to find the links/buttons created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use [document.querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) to find targeted elements.
+
 
 
 
@@ -59,32 +65,18 @@ D. When you install node.js, will also be installed [npm] (https://www.npmjs.com
 
 
 
-<table class="responsive">
+<table width="100%" style="width: 100%">
   <tbody>
     <tr>
-      <th colspan=3>Parameter</th>
-    </tr>
-    <tr>
-      <td>
-         <b>dealerID</b>
-      </td>
-       <td>
-          <code>required</code>
-      </td>
-      <td>
-         <code>string</code> The dealerID for the site your placing this on. [See Here](#locateDealerID)
-      </td>
+        <td valign="top"><b>dealerID</b></td>
+        <td valign="top"><code>required</code></td>
+        <td valign="top"><code>string</code><br>
+           The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
     </tr>
      <tr>
-      <td>
-        **selector**
-      </td>
-       <td>
-        `required`
-      </td>
-      <td>
-        `string` the selector to find your elements on the page
-      </td>
+        <td valign="top"><b>selector</b></td>
+        <td valign="top"><code>required</code></td>
+        <td valign="top"><code>string</code><br>The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
     </tr>
   </tbody>
 </table>
