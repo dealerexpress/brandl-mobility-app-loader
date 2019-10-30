@@ -57,17 +57,18 @@ If things are not working correctly, see the javascript console as errors will b
 
 ## Constructor
 
-### BrandlAppLoader(<a href="#parameter-initializer">{initializer}</a>)
+### BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
 Used to initialize the loader. Should be called like this:<br>
-Example: `var myRef = new BrandlAppLoader({initializer});`
+Example: `var myRef = new BrandlAppLoader(initializer);`
 
 ---
 
 ## Methods
 
-### vehicleSet(<a href="#parameter-vehicle">{vehicle}</a>)
-Add or update a vehicle to the application. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.  This is useful if your site does not reload between vehicles.<br>
-Example: `myRef.vehicleSet({vehicle});`
+### vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
+@param <a href="#parameter-vehicle"><code>vehicle</code></a><br>
+Add or update the vehicle associated with application. This is useful if your site's page does not reload between vehicle views. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.<br>
+Example: `myRef.vehicleSet(vehicle);`
 
 ----
 
