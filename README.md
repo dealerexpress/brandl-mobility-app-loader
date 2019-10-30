@@ -55,15 +55,30 @@ If things are not working correctly, see the javascript console as errors will b
 
 # API Reference
 
+## Constructor
+
+### BrandlAppLoader(<a href="#parameter-initializer">{initializer}</a>)
+Used to initialize the loader. Should be called like this:<br>
+Example: `var myRef = new BrandlAppLoader({initializer});`
+
+---
+
 ## Methods
 
-### BrandlAppLoader(<a href="#locateDealerID">{initializer}</a>)
-Used to initialize the loader. Should be called like this:<br>`var myRef = new BrandlAppLoader({initializer})`
+### vehicleSet(<a href="#parameter-vehicle">{vehicle}</a>)
+Add or update a vehicle to the application. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.  This is useful if your site does not reload between vehicles.<br>
+Example: `myRef.vehicleSet({vehicle});`
 
-#### {initializer} (object)
+----
+
+## Parameters
+
+<a name="parameter-initializer"></a>
+### {initializer}
+Type: `object`
 <table>
   <thead>
-    <tr>
+       <tr>
       <th>Name</th>
       <th>Type</th>
       <th>Description</th>
@@ -73,8 +88,38 @@ Used to initialize the loader. Should be called like this:<br>`var myRef = new B
     <tr>
       <td valign="top"><code>dealerID</code></td>
       <td valign="top">string</td>
-      <td valign="top"><strong>Required</strong><br>
-        The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
+      <td valign="top"><strong>Required</strong>. The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
+    </tr>
+    <tr>
+      <td valign="top"><code>selector</code></td>
+      <td valign="top">string</td>
+      <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+    </tr>
+    <tr>
+      <td valign="top"><a href="#vehicleObject"><code>vehicle</code></a></td>
+      <td valign="top">object</td>
+      <td valign="top">An object with information about the vehicle being applied for. <a href="#vehicleObject">See vehicle definition</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<a name="parameter-vehicle"></a>
+### {vehicle}
+Type: `object`
+<table>
+  <thead>
+       <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top"><code>year</code></td>
+      <td valign="top">string|number</td>
+      <td valign="top">The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
     </tr>
     <tr>
       <td valign="top"><code>selector</code></td>
@@ -89,6 +134,7 @@ Used to initialize the loader. Should be called like this:<br>`var myRef = new B
     </tr>
   </tbody>
 </table>
+
 
 
 <a name="vehicleObject"></a>
