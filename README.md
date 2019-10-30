@@ -97,9 +97,9 @@ Type: `object`
       <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
     </tr>
     <tr>
-      <td valign="top"><a href="#parameters-vehicle"><code>vehicle</code></a></td>
+      <td valign="top"><a href="#parameter-vehicle"><code>vehicle</code></a></td>
       <td valign="top">object</td>
-      <td valign="top">An object with information about the vehicle being applied for. <a href="#parameters-vehicle">See vehicle definition</a></td>
+      <td valign="top">An object with information about the vehicle being applied for. <a href="#parameter-vehicle">See vehicle definition</a></td>
     </tr>
   </tbody>
 </table>
