@@ -10,8 +10,10 @@ Share this page with your webmaster, below are the technical installation and us
 
 -----
 
-Installation
-------------
+<br><br><br>
+
+# Installation
+
 Everything you need is hosted on a CDN and may be used as shown. It's recommended to used the CDN hosted files as updates can be made without updated your site.
 
 ### Step 1
@@ -48,28 +50,44 @@ In our basic example, submitions include the dealer information and ensures corr
 ### Step 3
 Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brand Mobility Application".
 
-#### Debug
+### Debug
 If things are not working correctly, see the javascript console as errors will be displayed to help solve the issue. In Google Chrome, right click the page and choose 'Inspect'.
 
 -----
+<br><br><br>
 
 # API Reference
 
-## Constructor
+## Constructors
 
-### BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
+### - BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
 @param <a href="#parameter-initializer"><code>initializer</code></a><br>
-Used to initialize the loader. Should be called like this:<br>
-Example: `var myRef = new BrandlAppLoader(initializer);`
-
+Used to initialize the loader.  Make sure you you call it using 'new'
+```javascript 
+// Usage
+var myRef = new BrandlAppLoader(initializer);
+```
 ---
 
 ## Methods
 
-### vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
+### - vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
 @param <a href="#parameter-vehicle"><code>vehicle</code></a><br>
-Add or update the vehicle associated with application. This is useful if your site's page does not reload between vehicle views. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.<br>
-Example: `myRef.vehicleSet(vehicle);`
+Add or update the vehicle associated with application. This is useful if your site's page does not reload between vehicle views. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.
+```javascript 
+// Usage
+myRef.vehicleSet(vehicle);
+```
+<br><br>
+
+### - vehicleGet()
+@returns <a href="#parameter-vehicle"><code>vehicle</code></a><br>
+Get the current <a href="#parameter-vehicle"><code>vehicle</code></a> `object`. 
+```javascript 
+// Usage
+myRef.vehicleGet();
+```
+<br><br>
 
 ----
 
