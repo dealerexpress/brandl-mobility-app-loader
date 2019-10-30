@@ -72,9 +72,10 @@ Used to initialize the loader.  Make sure you you call it using 'new'
 // Usage
 var myRef = new BrandlAppLoader(initializer);
 ```
----
+<br><br>
 
 ## Methods
+
 <a name="method-vehicleSet"></a>
 ### - vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
 @param <a href="#parameter-vehicle"><code>vehicle</code></a><br>
@@ -83,7 +84,6 @@ Add or update the vehicle associated with application. This is useful if your si
 // Usage
 myRef.vehicleSet(vehicle);
 ```
-<br>
 
 ### - vehicleGet()
 @returns <a href="#parameter-vehicle"><code>vehicle</code></a><br>
@@ -92,13 +92,13 @@ Get the current <a href="#parameter-vehicle"><code>vehicle</code></a> `object`.
 // Usage
 myRef.vehicleGet();
 ```
-<br>
 
 
 
 
 
-<br>
+
+<br><br>
 
 ## Parameters
 
