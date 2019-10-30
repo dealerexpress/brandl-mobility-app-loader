@@ -97,9 +97,9 @@ Type: `object`
       <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
     </tr>
     <tr>
-      <td valign="top"><a href="#vehicleObject"><code>vehicle</code></a></td>
+      <td valign="top"><a href="#parameters-vehicle"><code>vehicle</code></a></td>
       <td valign="top">object</td>
-      <td valign="top">An object with information about the vehicle being applied for. <a href="#vehicleObject">See vehicle definition</a></td>
+      <td valign="top">An object with information about the vehicle being applied for. <a href="#parameters-vehicle">See vehicle definition</a></td>
     </tr>
   </tbody>
 </table>
@@ -110,35 +110,58 @@ Type: `object`
 Type: `object`
 <table>
   <thead>
-       <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
+     <tr>
+       <th>Name</th>
+       <th>Type</th>
+       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td valign="top"><code>year</code></td>
-      <td valign="top">string|number</td>
-      <td valign="top">The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
+      <td valign="top">string,number</td>
+      <td valign="top">The model year of the vehicle. Example: 2018</td>
     </tr>
     <tr>
-      <td valign="top"><code>selector</code></td>
+      <td valign="top"><code>make</code></td>
       <td valign="top">string</td>
-      <td valign="top"><strong>Required</strong><br>The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+      <td valign="top">The make of the vehicle. Example: Dodge</td>
     </tr>
     <tr>
-      <td valign="top"><a href="#vehicleObject"><code>vehicle</code></a></td>
-      <td valign="top">object</td>
-      <td valign="top">Optional<br>
-           An object with information about the vehicle being applied for. <a href="#vehicleObject">See vehicle definition</a></td>
+      <td valign="top"><code>model</code></td>
+      <td valign="top">string</td>
+      <td valign="top">The model of the vehicle. Example: Grand Caravan</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>vin</code></td>
+      <td valign="top">string</td>
+      <td valign="top">The VIN of the vehicle. Example: 2FG3FSD8RSW745869</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>stock</code></td>
+      <td valign="top">string</td>
+      <td valign="top">The dealer defined Stock Number of the vehicle. Example: D4583</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>conversion</code></td>
+      <td valign="top">string</td>
+      <td valign="top">The mobility conversion for the vehicle. Example: VMI Northstar</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>miles</code></td>
+      <td valign="top">string,number</td>
+      <td valign="top">How many miles are on the vehicle. Example: 24,526 or 24526</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>price</code></td>
+      <td valign="top">string,number</td>
+      <td valign="top">The selling price of the vehicle. Examples: $28,526 or $28,526.00 or 28526</td>
     </tr>
   </tbody>
 </table>
 
 
 
-<a name="vehicleObject"></a>
 
 ```
 npm install --save string
