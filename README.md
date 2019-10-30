@@ -21,7 +21,7 @@ Decide where the links/buttons should appear on your site and add standard HTML 
 
 IE:
 ```html
-<a href="/whatever/im/replaced" class="my-app-selector">Apply Online</a>
+<a href="/whatever/im/replaced" class="my-app-selector">Apply For A Loan</a>
 ```
 The link can be anything you like. Feel free to wrap images, containers or other elements in an **&lt;a&gt;**. While elements such as div, span, img, etc; will work directly, some browsers may block the clicks.  So just wrap whatever in a standard link or button tag.
 
@@ -41,48 +41,52 @@ var basicExample = new BrandlAppLoader({
 </script>
 
 ```
+
+In our basic example, submitions include the dealer information and ensures correct assignment.  Optionally, you may include vehicle information. Continue reading to learn how.
+
 -----
 ### Step 3
- from step 2.
+Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brand Mobility Application".
 
-```html
-
-```
-
- - **dealerID**  `string` `required` 
-[See below](#locateDealerID) on obtaining the dealerID
-
- - **selector**  `string` `required` 
+#### Debug
+If things are not working correctly, see the javascript console as errors will be displayed to help solve the issue. In Google Chrome, right click the page and choose 'Inspect'.
 
 
+-----
 
-
-
-
-D. When you install node.js, will also be installed [npm] (https://www.npmjs.com/).
-
-3. Please run the following command.
-
-
-
+### BrandlAppLoader({obj})
+Used to initialize the loader. Should be called like this:<br>`var myRef = new BrandlAppLoader({obj})`
 <table width="100%" style="width: 100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-        <td valign="top"><b>dealerID</b></td>
-        <td valign="top"><code>required</code></td>
-        <td valign="top"><code>string</code><br>
-           The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
+      <td valign="top"><code>dealerID</code></td>
+      <td valign="top">string</td>
+      <td valign="top"><strong>Required</strong><br>
+        The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
     </tr>
-     <tr>
-        <td valign="top"><b>selector</b></td>
-        <td valign="top"><code>required</code></td>
-        <td valign="top"><code>string</code><br>The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+    <tr>
+      <td valign="top"><code>selector</code></td>
+      <td valign="top">string</td>
+      <td valign="top"><strong>Required</strong><br>The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+    </tr>
+    <tr>
+      <td valign="top"><a href="#vehicleObject"><code>vehicle</code></a></td>
+      <td valign="top">object</td>
+      <td valign="top">Optional<br>
+           An object with information about the vehicle being applied for. <a href="#vehicleObject">See vehicle definition</a></td>
     </tr>
   </tbody>
 </table>
 
 
-
+<a name="vehicleObject"></a>
 
 ```
 npm install --save string
