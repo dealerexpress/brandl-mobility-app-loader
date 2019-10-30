@@ -58,6 +58,7 @@ If things are not working correctly, see the javascript console as errors will b
 ## Constructor
 
 ### BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
+@param <a href="#parameter-initializer"><code>initializer</code></a><br>
 Used to initialize the loader. Should be called like this:<br>
 Example: `var myRef = new BrandlAppLoader(initializer);`
 
@@ -120,42 +121,42 @@ Type: `object`
     <tr>
       <td valign="top"><code>year</code></td>
       <td valign="top">string,number</td>
-      <td valign="top">The model year of the vehicle. Example: 2018</td>
+      <td valign="top">The model year of the vehicle.<br><b>Example:</b> 2018</td>
     </tr>
     <tr>
       <td valign="top"><code>make</code></td>
       <td valign="top">string</td>
-      <td valign="top">The make of the vehicle. Example: Dodge</td>
+      <td valign="top">The make of the vehicle.<br><b>Example:</b> Dodge</td>
     </tr>
     <tr>
       <td valign="top"><code>model</code></td>
       <td valign="top">string</td>
-      <td valign="top">The model of the vehicle. Example: Grand Caravan</td>
+      <td valign="top">The model of the vehicle. You may also include the vehicle's trim level in this field.<br><b>Example:</b> Grand Caravan SE</td>
     </tr>
     <tr>
       <td valign="top"><code>vin</code></td>
       <td valign="top">string</td>
-      <td valign="top">The VIN of the vehicle. Example: 2FG3FSD8RSW745869</td>
+      <td valign="top">The VIN of the vehicle.<br><b>Example:</b> 2FG3FSD8RSW745869</td>
     </tr>
     <tr>
       <td valign="top"><code>stock</code></td>
       <td valign="top">string</td>
-      <td valign="top">The dealer defined Stock Number of the vehicle. Example: D4583</td>
+      <td valign="top">The dealer defined Stock Number of the vehicle.<br><b>Example:</b> D4583</td>
     </tr>
     <tr>
       <td valign="top"><code>conversion</code></td>
       <td valign="top">string</td>
-      <td valign="top">The mobility conversion for the vehicle. Example: VMI Northstar</td>
+      <td valign="top">The mobility conversion for the vehicle.<br><b>Example:</b> VMI Northstar</td>
     </tr>
     <tr>
       <td valign="top"><code>miles</code></td>
       <td valign="top">string,number</td>
-      <td valign="top">How many miles are on the vehicle. Example: 24,526 or 24526</td>
+      <td valign="top">How many miles are on the vehicle.<br><b>Example:</b> 24,526 or 24526</td>
     </tr>
     <tr>
       <td valign="top"><code>price</code></td>
       <td valign="top">string,number</td>
-      <td valign="top">The selling price of the vehicle. Examples: $28,526 or $28,526.00 or 28526</td>
+      <td valign="top">The selling price of the vehicle.<br><b>Examples:</b> $28,526 or $28,526.00 or 28526</td>
     </tr>
   </tbody>
 </table>
