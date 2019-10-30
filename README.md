@@ -51,12 +51,17 @@ Verify things are working by loading a page in your browser and clicking one of 
 #### Debug
 If things are not working correctly, see the javascript console as errors will be displayed to help solve the issue. In Google Chrome, right click the page and choose 'Inspect'.
 
-
 -----
 
-### BrandlAppLoader({obj})
-Used to initialize the loader. Should be called like this:<br>`var myRef = new BrandlAppLoader({obj})`
-<table width="100%" style="width: 100%">
+# API Reference
+
+## Methods
+
+### BrandlAppLoader(<a href="#locateDealerID">{initializer}</a>)
+Used to initialize the loader. Should be called like this:<br>`var myRef = new BrandlAppLoader({initializer})`
+
+#### {initializer} (object)
+<table>
   <thead>
     <tr>
       <th>Name</th>
