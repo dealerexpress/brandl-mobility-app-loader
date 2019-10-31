@@ -46,10 +46,10 @@ In our basic example, submissions include the dealer information and ensures cor
 
 -----
 ### Step 3
-Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brand Mobility Application".
+Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brandl obility Application".
 
 ### What Next
-You can include a <a href="#parameter-vehicle"><code>vehicle</code></a> `object` in the <a href="#parameter-initializer"><code>initializer</code></a> parameter or add/update vehicle information via the <a href="#method-vehicleSet">setVehicle()</a> method. 
+You can include a <a href="#parameter-vehicle"><code>vehicle</code></a> `object` in the <a href="#parameter-initializer"><code>initializer</code></a> parameter or add/update vehicle information via the <a href="#method-setVehicle">setVehicle()</a> method. 
 
 
 <br><br>
@@ -79,7 +79,7 @@ Take a look at a few common use working examples.
 
 ### - BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
 @param <a href="#parameter-initializer"><code>initializer</code></a><br>
-Used to initialize the loader.  Make sure you you call it using 'new'
+Used to initialize the loader.  Make sure you call it using 'new'
 ```javascript 
 // Usage
 var myRef = new BrandlAppLoader(initializer);
@@ -88,21 +88,21 @@ var myRef = new BrandlAppLoader(initializer);
 
 ## Methods
 
-<a name="method-vehicleSet"></a>
-### - vehicleSet(<a href="#parameter-vehicle">vehicle</a>)
+<a name="method-setVehicle"></a>
+### - setVehicle(<a href="#parameter-vehicle">vehicle</a>)
 @param <a href="#parameter-vehicle"><code>vehicle</code></a><br>
 Add or update the vehicle associated with application. This is useful if your site's page does not reload between vehicle views. The <a href="#parameter-vehicle"><code>vehicle</code></a> object may also be passed in the <a href="#parameter-initializer">`initializer`</a> object.
 ```javascript 
 // Usage
-myRef.vehicleSet(vehicle);
+myRef.setVehicle(vehicle);
 ```
 
-### - vehicleGet()
+### - getVehicle()
 @returns <a href="#parameter-vehicle"><code>vehicle</code></a><br>
 Get the current <a href="#parameter-vehicle"><code>vehicle</code></a> `object`. 
 ```javascript 
 // Usage
-myRef.vehicleGet();
+myRef.getVehicle();
 ```
 
 ### - resetVehicle()
@@ -147,7 +147,7 @@ Type: `object`
     <tr>
       <td valign="top"><code>selector</code></td>
       <td valign="top">string</td>
-      <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+      <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and is separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
     </tr>
     <tr>
       <td valign="top"><a href="#parameter-vehicle"><code>vehicle</code></a></td>
