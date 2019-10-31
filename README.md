@@ -105,6 +105,26 @@ Get the current <a href="#parameter-vehicle"><code>vehicle</code></a> `object`.
 myRef.vehicleGet();
 ```
 
+### - resetVehicle()
+Clear current set vehicle. 
+```javascript 
+// Usage
+myRef.resetVehicle();
+```
+
+### - open()
+Open the apply window with current settings. If already open, bring to focus. 
+```javascript 
+// Usage
+myRef.open();
+```
+
+### - getElements()
+@returns list of elements on the page that have been activated. 
+```javascript 
+// Usage
+myRef.getElements();
+```
 
 
 
