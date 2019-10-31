@@ -2,10 +2,10 @@
 
 <img align="right" width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/screenshot.png">Add a Brandl Mobility credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
 
-**Requires your site is listed at brandlmobility.com.** If you're not already listed at [brandlmobility.com](https://www.brandlmobility.com). contact us and see about getting your mobility dealership listed. No additional security measures within your own site is required.
+**Requires that your site is listed at brandlmobility.com.** If you're not already listed at [brandlmobility.com](https://www.brandlmobility.com), contact us and see about getting your mobility dealership listed. No additional security measures within your own site are required.
 
 ### Next Step
-Share this page with your webmaster, below are the technical installation and usage instructions.
+Share this page with your webmaster. Below are the technical installation and usage instructions.
 
 -----
 
@@ -28,7 +28,7 @@ The link can be anything you like. Feel free to wrap images, containers or other
 
 -----
 ### Step 2
-Place the following script loader on any page containing links links/buttons for the financing application.  *You may place this in an include file such as your footer allowing use on any page of your site.*
+Place the following script loader on any page containing links/buttons for the financing application.  *You may place this in an include file such as your footer, allowing use on any page of your site.*
 ```html
 <script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/bundle.min.js"></script>
 
