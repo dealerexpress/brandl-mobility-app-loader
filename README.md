@@ -42,7 +42,7 @@ var basicExample = new BrandlAppLoader({
 
 ```
 
-In our basic example, submitions include the dealer information and ensures correct assignment.  Optionally, you may include vehicle information. Continue reading to learn how.
+In our basic example, submissions include the dealer information and ensures correct assignment.  Optionally, you may include vehicle information. Continue reading to learn how.
 
 -----
 ### Step 3
