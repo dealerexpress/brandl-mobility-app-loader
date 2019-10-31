@@ -52,9 +52,23 @@ Verify things are working by loading a page in your browser and clicking one of 
 You can include a <a href="#parameter-vehicle"><code>vehicle</code></a> `object` in the <a href="#parameter-initializer"><code>initializer</code></a> parameter or add/update vehicle information via the <a href="#method-vehicleSet">setVehicle()</a> method. 
 
 
-
+<br><br>
 # Debug
 If things are not working correctly, see the javascript console as errors will be displayed to help solve the issue. In Google Chrome, right click the page and choose 'Inspect'.
+
+
+
+
+<br><br>
+# Demos
+Take a look at a few common use working examples.
+<ul>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/1_basic.html" target="_blank">Basic without vehicle</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/2_include-vehicle.html" target="_blank">Include vehicle data</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/3_add-vehicle.html" target="_blank">Update vehicle using setVehicle()</a></li>
+</ul>
+
+
 
 
 <br><br>
