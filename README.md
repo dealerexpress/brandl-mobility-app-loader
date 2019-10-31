@@ -2,7 +2,7 @@
 
 <img align="right" width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/screenshot.png">Add a Brandl Mobility credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
 
-**Requires you provide the dealerID obtained from Brandl Mobility.** Not listed at [brandlmobility.com](https://www.brandlmobility.com) yet? Contact us and see about getting your mobility dealership listed. No additional security measures within your own site is required.
+**Requires your site is listed at brandlmobility.com.** If you're not already listed at [brandlmobility.com](https://www.brandlmobility.com). contact us and see about getting your mobility dealership listed. No additional security measures within your own site is required.
 
 ### Next Step
 Share this page with your webmaster, below are the technical installation and usage instructions.
@@ -13,7 +13,7 @@ Share this page with your webmaster, below are the technical installation and us
 
 # Installation
 
-Everything you need is hosted on a CDN and may be used as shown. It's recommended to used the CDN hosted files as updates can be made without updated your site.
+Everything you need is hosted on a CDN and may be used as shown. Use of the CDN hosted script recommended to ensure our changes get reflected at your site.
 
 ### Step 1
 Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price.  For Example: 
@@ -30,13 +30,12 @@ The link can be anything you like. Feel free to wrap images, containers or other
 ### Step 2
 Place the following script loader on any page containing links links/buttons for the financing application.  *You may place this in an include file such as your footer allowing use on any page of your site.*
 ```html
-<script src="https://dx-cdn-public.storage.googleapis.com/dx-shared/browser-scripts/brandl-mobility-app-loader/dist/bundle.min.gz.js"></script>
+<script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/bundle.min.js"></script>
 
 <!-- Initialize a basic loader on any page where links/buttons to the application are 
      desired.  The following should be anywhere AFTER the script loader. -->
 <script type="application/javascript">
 var basicExample = new BrandlAppLoader({  
-   dealerID: 'demo',  
    selector: 'a.my-app-selector' 
 });
 </script>
@@ -114,11 +113,6 @@ Type: `object`
   </thead>
   <tbody>
     <tr>
-      <td valign="top"><code>dealerID</code></td>
-      <td valign="top">string</td>
-      <td valign="top"><strong>Required</strong>. The dealerID for the site your placing this on. <a href="#locateDealerID">See Here</a></td>
-    </tr>
-    <tr>
       <td valign="top"><code>selector</code></td>
       <td valign="top">string</td>
       <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
@@ -183,6 +177,11 @@ Type: `object`
       <td valign="top"><code>price</code></td>
       <td valign="top">string,number</td>
       <td valign="top">The selling price of the vehicle.<br><b>Examples:</b> $28,526 or $28,526.00 or 28526</td>
+    </tr>
+    <tr>
+      <td valign="top"><code>link</code></td>
+      <td valign="top">string</td>
+      <td valign="top">A link to the vehicle on your site. Should be the full URL.<br><b>Examples:</b> http://www.your-site.com/path/to/vehicle</td>
     </tr>
   </tbody>
 </table>
