@@ -1,7 +1,6 @@
-<img src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/brandl-logo.svg"  width="30%"><img src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/brandl-logo.svg"  width="70%">
+<img width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/brandl-logo.svg">
 
-
-Add a Brandl Mobility credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
+<img align="right" width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/screenshot.png">Add a Brandl Mobility credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
 
 **Requires you provide the dealerID obtained from Brandl Mobility.** Not listed at [brandlmobility.com](https://www.brandlmobility.com) yet? Contact us and see about getting your mobility dealership listed. No additional security measures within your own site is required.
 
