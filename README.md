@@ -16,9 +16,7 @@ Share this page with your webmaster. Below are the technical installation and us
 Everything you need is hosted on a CDN and may be used as shown. Use of the CDN hosted script recommended to ensure our changes get reflected at your site.
 
 ### Step 1
-Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price.  For Example: 
-
-**Price: $45,900** -  [Apply Online](https://www.brandlmobility.com)
+Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price. 
 
 IE:
 ```html
