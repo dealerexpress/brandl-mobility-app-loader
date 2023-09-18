@@ -1,8 +1,8 @@
-<img width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/brandl-logo.svg">
+<img width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/assets/logo.svg">
 
-<img align="right" width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/assets/screenshot.png">Add a Brandl Mobility credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
+<img align="right" width="220" src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/assets/screenshot.png">Add a Mobility Finance credit app to any site using the javascript loader. Simply copy a few lines into your site and that's it. The module is less than 2kb gzipped minified and has zero dependencies. 
 
-**Requires that your site is listed at brandlmobility.com.** If you're not already listed at [brandlmobility.com](https://www.brandlmobility.com), contact us and see about getting your mobility dealership listed. No additional security measures within your own site are required.
+**Requires that your site is listed at mobilityfinance.com.** If you're not already listed at [mobilityfinance.com](https://www.mobilityfinance.com), contact us and see about getting your mobility dealership listed. No additional security measures within your own site are required.
 
 ### Next Step
 Share this page with your webmaster. Below are the technical installation and usage instructions.
@@ -16,7 +16,9 @@ Share this page with your webmaster. Below are the technical installation and us
 Everything you need is hosted on a CDN and may be used as shown. Use of the CDN hosted script recommended to ensure our changes get reflected at your site.
 
 ### Step 1
-Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price. 
+Decide where the links/buttons should appear on your site and add standard HTML links. Often this is on a single vehicle for sale page, somewhere near the vehicle price.  For Example: 
+
+**Price: $45,900** -  [Apply Online](https://www.mobilityfinance.com)
 
 IE:
 ```html
@@ -28,12 +30,10 @@ The link can be anything you like. Feel free to wrap images, containers or other
 ### Step 2
 Place the following script loader on any page containing links/buttons for the financing application.  *You may place this in an include file such as your footer, allowing use on any page of your site.*
 ```html
-<script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/bundle.min.js"></script>
+<script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/bundle.min.js"></script>
 
-<!-- Initialize a basic loader on any page where links/buttons to the application are 
-     desired.  The following should be anywhere AFTER the script loader. -->
-<script type="application/javascript">
-var basicExample = new BrandlAppLoader({  
+<script>
+var basicExample = new MobilityFinanceAppLoader({  
    selector: 'a.my-app-selector' 
 });
 </script>
@@ -44,7 +44,7 @@ In our basic example, submissions include the dealer information and ensures cor
 
 -----
 ### Step 3
-Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Brandl obility Application".
+Verify things are working by loading a page in your browser and clicking one of your links.  It should open a window with the application.  The dealer's name should be listed in the header directly under "Mobility Finance Application".
 
 ### What Next
 You can include a <a href="#parameter-vehicle"><code>vehicle</code></a> `object` in the <a href="#parameter-initializer"><code>initializer</code></a> parameter or add/update vehicle information via the <a href="#method-setVehicle">setVehicle()</a> method. 
@@ -61,9 +61,9 @@ If things are not working correctly, see the javascript console as errors will b
 # Demos
 Take a look at a few common use working examples.
 <ul>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/1_basic.html" target="_blank">Basic without vehicle</a></li>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/2_include-vehicle.html" target="_blank">Include vehicle data</a></li>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/brandl-mobility-app-loader/v1/examples/3_add-vehicle.html" target="_blank">Update vehicle using setVehicle()</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/1_basic.html" target="_blank">Basic without vehicle</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/2_include-vehicle.html" target="_blank">Include vehicle data</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/3_add-vehicle.html" target="_blank">Update vehicle using setVehicle()</a></li>
 </ul>
 
 
@@ -75,12 +75,12 @@ Take a look at a few common use working examples.
 
 ## Constructors
 
-### - BrandlAppLoader(<a href="#parameter-initializer">initializer</a>)
+### - MobilityFinanceAppLoader(<a href="#parameter-initializer">initializer</a>)
 @param <a href="#parameter-initializer"><code>initializer</code></a><br>
 Used to initialize the loader.  Make sure you call it using 'new'
 ```javascript 
 // Usage
-var myRef = new BrandlAppLoader(initializer);
+var myRef = new MobilityFinanceAppLoader(initializer);
 ```
 <br><br>
 
@@ -109,7 +109,7 @@ Clear current set vehicle.
 // Usage
 myRef.resetVehicle();
 ```
-
+<a name="method-open"></a>
 ### - open()
 Open the apply window with current settings. If already open, bring to focus. 
 ```javascript 
@@ -145,12 +145,14 @@ Type: `object`
     <tr>
       <td valign="top"><code>selector</code></td>
       <td valign="top">string</td>
-      <td valign="top"><strong>Required</strong>. The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and is separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.</td>
+      <td valign="top">(Optional). The selector to find your elements on the page created in step 1. You might find it best to assign a class to each link/button that is only used for selecting and is separate from styles. All elements matching the provided selector will be modified to open/continue filling out a credit app. Internally, we use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll()</a> to find elements matching provided selector string.
+       <strong>If you do not provide a selector, you can open the application via the <a href="#method-open">open()</a> method.</strong>
+      </td>
     </tr>
     <tr>
       <td valign="top"><a href="#parameter-vehicle"><code>vehicle</code></a></td>
       <td valign="top">object</td>
-      <td valign="top">An object with information about the vehicle being applied for. <a href="#parameter-vehicle">See vehicle definition</a></td>
+      <td valign="top">(Optional). An object with information about the vehicle being applied for. <a href="#parameter-vehicle">See vehicle definition</a></td>
     </tr>
   </tbody>
 </table>
