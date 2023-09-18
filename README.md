@@ -30,7 +30,7 @@ The link can be anything you like. Feel free to wrap images, containers or other
 ### Step 2
 Place the following script loader on any page containing links/buttons for the financing application.  *You may place this in an include file such as your footer, allowing use on any page of your site.*
 ```html
-<script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/bundle.min.js"></script>
+<script src="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/bundle.min.js"></script>
 
 <script>
 var basicExample = new MobilityFinanceAppLoader({  
@@ -61,9 +61,9 @@ If things are not working correctly, see the javascript console as errors will b
 # Demos
 Take a look at a few common use working examples.
 <ul>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/1_basic.html" target="_blank">Basic without vehicle</a></li>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/2_include-vehicle.html" target="_blank">Include vehicle data</a></li>
-     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v1/examples/3_add-vehicle.html" target="_blank">Update vehicle using setVehicle()</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/examples/1_basic.html" target="_blank">Basic without vehicle</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/examples/2_include-vehicle.html" target="_blank">Include vehicle data</a></li>
+     <li><a href="https://storage.googleapis.com/dx-cdn-public/dx-shared/browser-scripts/mobility-finance-app-loader/v4/examples/3_add-vehicle.html" target="_blank">Update vehicle using setVehicle()</a></li>
 </ul>
 
 
